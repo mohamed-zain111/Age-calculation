@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- | Link Css | -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- | Link Render | -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <!-- | Link Font Awesome | -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- | Link google Font | -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- | Link Logo | -->
+    <link rel="icon" type"imags/x-icon" href="logo.png">
+    <title>Age calculation</title>
+  </head>
+  <body>
+    <section class="home">
+      <div class="container">
+        <div class="cont">
+          <div class="box">
+            <div class="img"><img src="img/team-01.png" alt="" /></div>
+
+            <form action="">
+              <input id="year" type="number" placeholder="سنة" />
+              <input id="month" type="number" placeholder="شهر" />
+              <input id="day" type="number" placeholder="يوم" />
+            </form>
+            <div class="btn">
+              <button id="calculete">احسب</button>
+            </div>
+            <div class="note">
+              <h3>يمكنك حساب عمرك بدقة.</h3>
+              <h3>حساب العمر بالايام والساعات والدقائق.</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- | output | -->
+
+    <div class="output">
+      <div class="box">
+        <div class="cont">
+          <div id="closeOut"><i class="fas fa-times modal-close-btn"></i></div>
+
+          <div class="card1">
+            <h3>تاريخ ميلادك هو</h3>
+            <div class="ContOut">
+              <div id="birthday" class="out">
+                <h4 id="s1">سنة</h4>
+                <h4 id="s2">شهر</h4>
+                <h4 id="s3">يوم</h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="card2 card1">
+            <h3>عمرك هو</h3>
+            <div class="ContOut">
+              <div id="age" class="out">
+                <h4 id="sa1"></h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="card3 card1">
+            <h3>عمرك بالشهور :</h3>
+            <div id="inMonths" class="out">
+              <h4 id="sm1"></h4>
+            </div>
+          </div>
+
+          <div class="card3 card1">
+            <h3>عمرك بالايام :</h3>
+            <div id="inDays" class="out">
+              <h4 id="sd1"></h4>
+            </div>
+          </div>
+          <div class="card3 card1">
+            <h3>عمرك بالساعات :</h3>
+            <div id="inHours" class="out">
+              <h4 id="sh1"></h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- | Error | -->
+
+    <div class="error">
+      <div class="box">
+        <div class="cont">
+          <div id="closeError">
+            <i class="fas fa-times modal-close-btn"></i>
+          </div>
+          <h2>خطأ</h2>
+          <h3>يجب عليك ملئ جميع الحقول للتقدم الي صفحة قياس العمر</h3>
+        </div>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
